@@ -7,6 +7,7 @@ public class CnvMain : MonoBehaviour
 {
     public Text txtSavings;
     public Button btnClick;
+    public GameObject pnlUpgrades;
 
     public double value = 0.01;
     public double savings = 0;
@@ -28,8 +29,8 @@ public class CnvMain : MonoBehaviour
         savings += value;
     }
 
-    public void Upgrade()
+    public void OpenUpgrades()
     {
-        value *= 2;
+        pnlUpgrades.SetActive(true);
     }
 }
