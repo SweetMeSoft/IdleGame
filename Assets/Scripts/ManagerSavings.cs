@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CnvMain : MonoBehaviour
+public class ManagerSavings : MonoBehaviour
 {
     public Text txtSavings;
-    public Button btnClick;
+    public Button btnAskFor;
     public GameObject pnlUpgrades;
 
-    public double value = 0.01;
-    public double savings = 0;
+    public double baseValue;
+    public double savings;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +20,13 @@ public class CnvMain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        btnClick.GetComponentInChildren<Text>().text = "+$ " + value;
+        btnAskFor.GetComponentInChildren<Text>().text = "Pedir +$ " + baseValue;
         txtSavings.text = "Savings: $ " + savings.ToString("0.00");
     }
 
     public void Click()
     {
-        savings += value;
+        savings += baseValue;
     }
 
     public void OpenUpgrades()
