@@ -24,7 +24,7 @@ public class ManagerMaterial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txtMaterials.text = "Material: " + quantityMaterial;
+        txtMaterials.text = quantityMaterial+"m";
     }
 
     public void BuyMaterial()

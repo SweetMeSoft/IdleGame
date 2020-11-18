@@ -20,8 +20,8 @@ public class ManagerSavings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        btnAskFor.GetComponentInChildren<Text>().text = "Pedir +$ " + baseValue;
-        txtSavings.text = "Savings: $ " + savings.ToString("0.00");
+        btnAskFor.GetComponentInChildren<Text>().text = "+$ " + baseValue;
+        txtSavings.text = "$ " + savings.ToString("0.00");
     }
 
     public void Click()
