@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UpgradesManager : MonoBehaviour
+public class ManagerUpgrades : MonoBehaviour
 {
     public GameObject pnlUpgrades;
     public Button btnClose;
