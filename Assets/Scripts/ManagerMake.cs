@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ManagerMake : MonoBehaviour
@@ -9,8 +7,8 @@ public class ManagerMake : MonoBehaviour
     ManagerMaterial managerMaterial;
 
     public Button btnMakeBracelet;
-    public double braceletValue;
-    public double baseMaterial;
+    public double valueMoney;
+    public double costMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -24,15 +22,22 @@ public class ManagerMake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(managerMaterial.quantityMaterial < costMaterial)
+        {
+            btnMakeBracelet.enabled = false;
+        }
+        else
+        {
+            btnMakeBracelet.enabled = true;
+        }
     }
 
     public void MakeBracelet()
     {
-        if (managerMaterial.quantityMaterial >= baseMaterial)
+        if (managerMaterial.quantityMaterial >= costMaterial)
         {
-            managerMaterial.quantityMaterial -= baseMaterial;
-            managerSavings.savings += braceletValue;
+            managerMaterial.quantityMaterial -= costMaterial;
+            managerSavings.savings += valueMoney;
         }
     }
 }

@@ -24,6 +24,15 @@ public class ManagerMaterial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (managerSavings.savings < valueMaterial)
+        {
+            btnBuyMaterial.enabled = false;
+        }
+        else
+        {
+            btnBuyMaterial.enabled = true;
+        }
+
         txtMaterials.text = quantityMaterial+"m";
     }
 

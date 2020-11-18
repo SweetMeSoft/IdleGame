@@ -146,17 +146,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29975967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1794173878}
-  m_RootOrder: 5
+  m_Father: {fileID: 2094850929}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 186.92, y: 586.5}
-  m_SizeDelta: {x: 373.83936, y: 51.016083}
+  m_AnchoredPosition: {x: 187, y: 0}
+  m_SizeDelta: {x: 330.1933, y: 51.016083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &29975969
 CanvasRenderer:
@@ -193,7 +193,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 58
     m_Alignment: 5
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -487,7 +487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnMakeBracelet: {fileID: 1425122234}
-  braceletValue: 0.33
+  valueMoney: 0.3
+  costMaterial: 40
 --- !u!4 &793326275
 Transform:
   m_ObjectHideFlags: 0
@@ -976,7 +977,7 @@ MonoBehaviour:
   txtSavings: {fileID: 1751838275}
   btnAskFor: {fileID: 1993322893}
   pnlUpgrades: {fileID: 2143247982}
-  baseValue: 0.48
+  baseValue: 0.01
   savings: 0
 --- !u!4 &1263781728
 Transform:
@@ -1154,12 +1155,12 @@ RectTransform:
   m_Children:
   - {fileID: 990153935}
   m_Father: {fileID: 1794173878}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97.8, y: -335.58026}
-  m_SizeDelta: {x: 157.41974, y: 238.99945}
+  m_AnchoredPosition: {x: -192.07, y: -434.6}
+  m_SizeDelta: {x: 353.94196, y: 91.85184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425122234
 MonoBehaviour:
@@ -1355,17 +1356,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751838273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1794173878}
+  m_Father: {fileID: 2094850929}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184.52, y: 586.5}
-  m_SizeDelta: {x: 369.04163, y: 51.016083}
+  m_AnchoredPosition: {x: -185.8, y: 0}
+  m_SizeDelta: {x: 336.45355, y: 51.016083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751838275
 MonoBehaviour:
@@ -1498,12 +1499,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1751838274}
+  - {fileID: 2094850929}
   - {fileID: 1993322892}
   - {fileID: 1005926108}
   - {fileID: 2143247983}
   - {fileID: 557128677}
-  - {fileID: 29975968}
   - {fileID: 1425122233}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -1693,8 +1693,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 293.8, y: -335.58}
-  m_SizeDelta: {x: 160, y: 238.9989}
+  m_AnchoredPosition: {x: 196.48, y: -434.6}
+  m_SizeDelta: {x: 354.63678, y: 91.855316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993322893
 MonoBehaviour:
@@ -1787,6 +1787,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993322891}
   m_CullTransparentMesh: 0
+--- !u!1 &2094850928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2094850929}
+  - component: {fileID: 2094850931}
+  - component: {fileID: 2094850930}
+  m_Layer: 5
+  m_Name: PnlSummary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2094850929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094850928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1751838274}
+  - {fileID: 29975968}
+  m_Father: {fileID: 1794173878}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 2.3785095, y: 569.4}
+  m_SizeDelta: {x: -57.16028, y: -1204.0767}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2094850930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094850928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2094850931
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094850928}
+  m_CullTransparentMesh: 0
 --- !u!1 &2102659765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,7 +1874,7 @@ GameObject:
   - component: {fileID: 2102659767}
   - component: {fileID: 2102659766}
   m_Layer: 0
-  m_Name: ManagerMaterials
+  m_Name: ManagerMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1847,7 +1923,7 @@ GameObject:
   - component: {fileID: 2143247986}
   - component: {fileID: 2143247985}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PnlUpgrades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
